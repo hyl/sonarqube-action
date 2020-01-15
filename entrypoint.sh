@@ -8,4 +8,4 @@ sonar-scanner \
 -Dsonar.projectName="$INPUT_APP" \
 -Dsonar.scm.provider=git \
 -Dsonar.sourceEncoding=UTF-8 \
-$(if [ -z "$BRANCH_NAME" ];then echo "-Dsonar.branch.name=$BRANCH_NAME \")
+$(if [ -z "$BRANCH_NAME" ];then echo "-Dsonar.branch.name=$BRANCH_NAME")
