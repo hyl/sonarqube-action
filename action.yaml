@@ -1,4 +1,4 @@
-name: 'Sonarqube Scanner'
+name: 'Sonarqube Scanner w/ branch support'
 description: 'Scan code using Sonarqube'
 author: 'MindDoc GmbH'
 inputs:
@@ -14,6 +14,8 @@ inputs:
   url:
     description: 'Sonar server url'
     required: true
+  branch_name:
+    description: 'The branch this analysis is being ran against'
 runs:
   using: 'docker'
   image: 'Dockerfile'
