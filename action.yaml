@@ -14,8 +14,14 @@ inputs:
   url:
     description: 'Sonar server url'
     required: true
-  branch_name:
+  branchName:
     description: 'The branch this analysis is being ran against'
+  pullRequestKey:
+    description: 'The identifier for this PR'
+  pullRequestBranch:
+    description: 'The branch that contains the changes to be merged'
+  pullRequestBase:
+    description: 'The branch into which we shall be merging. Defaults to master if not set.'
 runs:
   using: 'docker'
   image: 'Dockerfile'
