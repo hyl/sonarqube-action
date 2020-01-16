@@ -16,4 +16,4 @@ RUN npm install --silent --save-dev -g typescript@3.5.2
 ENV NODE_PATH "/usr/lib/node_modules/"
 
 ADD entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["sh", "/entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
