@@ -8,4 +8,4 @@ sonar-scanner \
 -Dsonar.projectName="$INPUT_APP" \
 -Dsonar.scm.provider=git \
 -Dsonar.sourceEncoding=UTF-8 \
--Dsonar.branch.name=$BRANCH_NAME
+-Dsonar.branch.name="$INPUT_BRANCHNAME"
